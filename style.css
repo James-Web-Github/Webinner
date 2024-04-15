@@ -121,31 +121,74 @@ header a {
 
 .point-knowledge {
     display: flex;
+    height: 60vh;
     margin: 3%;
-    justify-content: center;
-    gap: 15%;
+    /* justify-content: center; */
+    /* gap: 3%; */
 }
 
 .intro-text{
     color: var(--item-color);
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .banner-2-div{
-    max-width: 40%;
+    background-image: linear-gradient(to left, rgba(129, 129, 129, 0.231), rgb(4, 4, 4)),url(image/banner2.png);
+    width: 50%;
+    
 }
 
-.img-2 {
-    max-width: 100%;
-}
-
-.intro-text {
-    gap: 2%;
-}
 .intro-text div {
     display:flex;
     align-items: center;
 }
-.point-color {
+.point-color.title{
     color: #ffbd59;
     font-size: 3.5rem;
+    margin-bottom: 10%;
+}
+
+.point-color {
+    color: #ffbd59;
+}
+
+.bigger {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.medium {
+    font-size: 1.5rem;
+    margin-top: 20px;
     margin-bottom: 10px;
+}
+
+.change-life-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.change-life-img {
+    width: 100%;
+    height: 30vh;
+    background-image: url(image/Banner-3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.change-life-img::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5); /* 黑色半透明蒙版，透明度可以调整 */
+    z-index: 1; /* 确保蒙版覆盖在背景图片之上 */
+}
+
+.content {
+    position: relative;
+    z-index: 2; /* 确保文本内容在蒙版之上 */
+    color: white; /* 为了提高可读性，设置文本颜色为白色 */
+    padding: 20px; /* 添加一些内边距 */
 }
